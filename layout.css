@@ -1,0 +1,229 @@
+.grid_header {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  padding: 20px;
+}
+.logo {
+  justify-self: start;
+}
+
+.menu {
+  justify-self: center;
+}
+
+.header-right {
+  justify-self: end;
+}
+header nav ul {
+  list-style: none;
+}
+.grid_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+}
+.company {
+  grid-column: 1;
+}
+.friends {
+  grid-column: 2;
+}
+.founder {
+  grid-column: 4;
+}
+
+/******* mobil ******/
+/** homepage **/
+/** text on image **/
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  /*padding: 25px;*/
+}
+.grid_1 img {
+  grid-column: 1;
+  grid-row: 1;
+}
+.grid_1 p {
+  grid-column: 1;
+  grid-row: 1;
+  /* når screen kommer under 600, så passer teksten ikke til billedet*/
+}
+/** genre stack **/
+.grid_genre {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f3eee6;
+  padding-bottom: 25px;
+}
+.book {
+  position: relative;
+  /* height her ændre størrelsen på bøgen*/
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+}
+
+.book img {
+  position: absolute;
+  /*top ændre hvor meget den skal rykkes op fra midten, fordi ellers stå den samme sted som texten*/
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: auto;
+}
+.book a {
+  position: absolute;
+  /*her ændres texten til at være vertical*/
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+/** top 10 **/
+.grid_10list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.grid_3-5 {
+  display: grid;
+  grid-template-columns: 3fr 5fr;
+  gap: 20px;
+  align-items: center;
+}
+.grid_3-5 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/***** librarypage *****/
+
+.grid_book {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.grid_book > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid_libcover {
+  display: grid;
+}
+
+.grid_libcover img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  display: block;
+}
+
+.grid_libcover label,
+.grid_libcover progress {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.grid_libcover progress {
+  place-self: end center;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+.grid_libcover label {
+  display: none;
+}
+
+.button {
+  margin-top: 1rem;
+  place-self: center;
+}
+/***** suggestionpage *****/
+
+.grid_book h3 {
+  grid-column: 1/3;
+  grid-row: 1;
+}
+.grid_book button {
+  grid-column: 2;
+  grid-row: 3;
+  place-self: center;
+}
+.genre_book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/******* desktop ******/
+@media (min-width: 1000px) {
+  /** homepage **/
+  .grid_genre {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 18px;
+    max-width: 1500px;
+    margin: 0 auto;
+    background: #f3eee6;
+    padding-bottom: 25px;
+  }
+  .book {
+    position: relative;
+    /* height her ændre størrelsen på bøgen*/
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+  }
+  .book img {
+    position: absolute;
+    /*top ændre hvor meget den skal rykkes op fra midten, fordi ellers stå den samme sted som texten*/
+    top: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: auto;
+  }
+  .book a {
+    position: absolute;
+    /*her ændres texten til at være vertical*/
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  .grid_worm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  .grid_citat {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 0 auto;
+  }
+  /***** librarypage *****/
+  .grid_book {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /***** suggestionpage *****/
+  .grid_book h3 {
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+  .grid_book button {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}

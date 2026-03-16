@@ -1,0 +1,440 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+
+/********** fonts *******/
+@font-face {
+  font-family: Autour;
+  src: url("typografi/Autour_One/11zon_AutourOne-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Caprasimo;
+  src: url("typografi/Caprasimo/11zon_Caprasimo-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Gloock;
+  src: url("typografi/Gloock/11zon_Gloock-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: Instrument;
+  src: url("typografi/Instrument_Sans/11zon_InstrumentSans-VariableFont_wdth,wght.woff") format("woff");
+}
+
+/***** Desktop ******/
+@media (min-width: 1001px) {
+  /***** MENU ******/
+  .logo img {
+    height: 50px;
+  }
+  .menu {
+    background-color: #d99e89; /* farven bag menuen */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px; /* adds space inside the menu */
+    border-radius: 40px; /* rounded menu edges */
+  }
+  .menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .menu img {
+    width: 40px;
+    height: auto;
+  }
+
+  .menu a.active {
+    background-color: #733232;
+  }
+
+  .menu a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+  /****** TEKST *****/
+  h1 {
+    color: #733232;
+    font-family: Caprasimo;
+    font-size: 10em;
+    font-weight: 100;
+    padding: 25px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2 {
+    color: #733232;
+    font-family: Caprasimo;
+    font-size: 6em;
+    font-weight: 800;
+    padding: 25px;
+  }
+  h3 {
+    color: #733232;
+    font-family: Autour;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 25px;
+  }
+  p {
+    color: grey;
+    font-family: Instrument;
+    font-size: 150%;
+    font-weight: 500;
+    padding: 25px;
+    max-width: 65ch;
+  }
+  li {
+    color: #733232;
+    font-family: Instrument;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 30px;
+  }
+  q {
+    color: #733232;
+    font-family: Gloock;
+    font-size: 2em;
+    font-weight: 100;
+    padding: 25px;
+  }
+  /** first img, text over img **/
+  .grid_1 p {
+    color: #733232;
+    font-family: Gloock;
+    font-size: 300%;
+    font-weight: 500;
+    padding: 25px;
+    max-width: 65ch;
+  }
+  .grid_1 img {
+    opacity: 0.5;
+    border-radius: 20px;
+  }
+  /** Bookworm list **/
+  .grid_worm ol {
+    color: #733232;
+    font-family: Instrument;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 30px;
+  }
+  .grid_worm h2 {
+    color: #733232;
+    font-family: Caprasimo;
+    font-size: 4em;
+    font-weight: 800;
+    padding: 25px;
+  }
+  .grid_worm img {
+    border-radius: 20px;
+  }
+  /** Genre links **/
+  .book a {
+    color: #efb29e;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  /** top ti liste **/
+  .grid_3-5 a {
+    color: #733232;
+    text-decoration: none;
+    font-family: Gloock;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .grid_citat p {
+    font-style: italic;
+  }
+  .grid_citat img {
+    border-radius: 20px;
+  }
+  /*****library books*****/
+  .librarytitle p {
+    text-align: center;
+    place-self: center;
+  }
+  .grid_book {
+    background-color: #a6511fac;
+    margin-bottom: 25px;
+  }
+  .grid_book h3 {
+    color: #f2eadf;
+    font-family: Gloock;
+  }
+}
+
+/***** MOBIL ******/
+@media screen and (max-width: 1000px) {
+  /***** MENU ******/
+  .logo img {
+    height: 50px;
+  }
+  .menu {
+    background-color: #d99e89; /* farven bag menuen */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px; /* adds space inside the menu */
+    border-radius: 40px; /* rounded menu edges */
+  }
+  .menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+
+  .menu img {
+    width: 40px;
+    height: auto;
+  }
+
+  .menu a.active {
+    background-color: #733232;
+  }
+
+  .menu a:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  /****** TEKST *****/
+  h1 {
+    color: #733232;
+    font-family: Caprasimo;
+    font-size: 6em;
+    font-weight: 100;
+    padding: 25px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  h2 {
+    color: #733232;
+    font-family: Caprasimo;
+    font-size: 4em;
+    font-weight: 800;
+    padding: 25px;
+  }
+  h3 {
+    color: #733232;
+    font-family: Autour;
+    font-size: 3em;
+    font-weight: 100;
+    padding: 25px;
+  }
+  p {
+    color: grey;
+    font-family: Instrument;
+    font-size: 125%;
+    font-weight: 500;
+    padding: 25px;
+    max-width: 65ch;
+  }
+  li {
+    color: #733232;
+    font-family: Instrument;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 30px;
+  }
+  q {
+    color: #733232;
+    font-family: Gloock;
+    font-size: 2.5em;
+    font-weight: 100;
+    padding: 25px;
+  }
+  /** first img, text over img **/
+  .grid_1 p {
+    color: #733232;
+    font-family: Gloock;
+    font-size: 200%;
+    font-weight: 500;
+    padding: 25px;
+    max-width: 65ch;
+  }
+  .grid_1 img {
+    border-radius: 20px;
+    opacity: 0.5;
+  }
+  /** Bookworm list **/
+  .grid_worm ol {
+    color: #733232;
+    font-family: Instrument;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 30px;
+  }
+  .grid_worm h2 {
+    color: #733232;
+    font-family: Caprasimo;
+    font-size: 4em;
+    font-weight: 800;
+    padding: 25px;
+  }
+  .grid_worm img {
+    border-radius: 20px;
+  }
+  /** Genre links **/
+  .book a {
+    color: #efb29e;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  /** top ti liste **/
+  .grid_3-5 a {
+    color: #733232;
+    text-decoration: none;
+    font-family: Gloock;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .grid_citat img {
+    border-radius: 20px;
+  }
+  /*****library books*****/
+  .grid_book {
+    background-color: #a6511fac;
+    margin-bottom: 25px;
+  }
+  .grid_book h3 {
+    color: #f2eadf;
+    font-family: Gloock;
+  }
+}
+/*genre book stack*/
+/* colors */
+.book1 {
+  background: #7b3437;
+}
+.book2 {
+  background: #55683a;
+}
+.book3 {
+  background: #b55e22;
+}
+.book4 {
+  background: #4a2e43;
+}
+
+.book5 {
+  background: #134f57;
+}
+.book6 {
+  background: #000000;
+}
+.book7 {
+  background: #404247;
+}
+.book8 {
+  background: #a1541d;
+}
+
+.book9 {
+  background: #551315;
+}
+.book10 {
+  background: #42531f;
+}
+.book11 {
+  background: #3f8792;
+}
+.book12 {
+  background: #a1749b;
+}
+/****** HEADER *****/
+header {
+  background-color: #f2eadf;
+  overflow: hidden;
+}
+/****** MAIN *****/
+main {
+  padding: 25px;
+  background-color: #f2eadf;
+  margin-inline: auto;
+  max-width: 1500px;
+}
+/****** FOOTER *****/
+footer {
+  background-color: #a6511f;
+  padding: 25px;
+}
+footer p {
+  color: #f2eadf;
+  text-decoration: none;
+  font-size: 1rem;
+}
+footer li {
+  color: #f2eadf;
+  font-family: Instrument;
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 30px;
+  list-style: none;
+}
+footer a {
+  color: #f2eadf;
+  text-decoration: none;
+}
+.button {
+  background-color: #d99e89; /* farven bag menuen */
+  border: none;
+  color: #733232;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+.genre_book button {
+  background-color: #733232;
+  border: none;
+  color: #f2eadf;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 25px;
+  border-radius: 8px;
+}
+
+.map {
+  padding-bottom: 25px;
+}
+.grid_worm {
+  padding-bottom: 25px;
+}
+.grid_10list {
+  padding-bottom: 25px;
+}
+.list10_text {
+  padding-bottom: 25px;
+}
+.grid_citat {
+  padding-bottom: 25px;
+}
