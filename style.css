@@ -10,21 +10,45 @@ img {
 }
 
 /********** fonts *******/
+/*
 @font-face {
   font-family: Autour;
   src: url("typografi/Autour_One/11zon_AutourOne-Regular.woff") format("woff");
+}*/
+.autour-one-regular {
+  font-family: "Autour One", system-ui;
+  font-style: normal;
 }
+/*
 @font-face {
   font-family: Caprasimo;
   src: url("typografi/Caprasimo/11zon_Caprasimo-Regular.woff") format("woff");
+}*/
+.caprasimo-regular {
+  font-family: "Caprasimo", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+/*
 @font-face {
   font-family: Gloock;
   src: url("typografi/Gloock/11zon_Gloock-Regular.woff") format("woff");
+}*/
+.gloock-regular {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
 }
+/*
 @font-face {
   font-family: Instrument;
   src: url("typografi/Instrument_Sans/11zon_InstrumentSans-VariableFont_wdth,wght.woff") format("woff");
+}*/
+.instrument-sans {
+  font-family: "Instrument Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 /***** Desktop ******/
@@ -92,7 +116,7 @@ img {
   }
   p {
     color: grey;
-    font-family: Instrument;
+    font-family: Instrument Sans;
     font-size: 150%;
     font-weight: 500;
     padding: 25px;
@@ -100,7 +124,7 @@ img {
   }
   li {
     color: #733232;
-    font-family: Instrument;
+    font-family: Instrument Sans;
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 30px;
@@ -128,7 +152,7 @@ img {
   /** Bookworm list **/
   .grid_worm ol {
     color: #733232;
-    font-family: Instrument;
+    font-family: Instrument Sans;
     font-size: 1.5rem;
     line-height: 1.5rem;
     margin: 30px;
@@ -242,7 +266,7 @@ img {
   }
   p {
     color: grey;
-    font-family: Instrument;
+    font-family: Instrument Sans;
     font-size: 125%;
     font-weight: 500;
     padding: 25px;
@@ -250,7 +274,7 @@ img {
   }
   li {
     color: #733232;
-    font-family: Instrument;
+    font-family: Instrument Sans;
     font-size: 1rem;
     line-height: 1.5rem;
     margin: 30px;
@@ -278,7 +302,7 @@ img {
   /** Bookworm list **/
   .grid_worm ol {
     color: #733232;
-    font-family: Instrument;
+    font-family: Instrument Sans;
     font-size: 1.2rem;
     line-height: 1.5rem;
     margin: 30px;
@@ -386,7 +410,7 @@ footer p {
 }
 footer li {
   color: #f2eadf;
-  font-family: Instrument;
+  font-family: Instrument Sans;
   font-size: 1rem;
   line-height: 1rem;
   margin: 30px;
