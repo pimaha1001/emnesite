@@ -55,7 +55,7 @@ img {
 @media (min-width: 1001px) {
   /***** MENU ******/
   .logo img {
-    height: 70px;
+    height: 50px;
   }
   .menu {
     background-color: #d99e89; /* farven bag menuen */
@@ -208,7 +208,7 @@ img {
 @media screen and (max-width: 1000px) {
   /***** MENU ******/
   .logo img {
-    height: 50px;
+    height: 70px;
   }
   .menu {
     background-color: #d99e89; /* farven bag menuen */
