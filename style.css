@@ -244,7 +244,7 @@ img {
   h1 {
     color: #733232;
     font-family: Caprasimo;
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 100;
     padding: 25px;
     text-transform: uppercase;
@@ -290,7 +290,7 @@ img {
   .grid_1 p {
     color: #733232;
     font-family: Gloock;
-    font-size: 200%;
+    font-size: 100%;
     font-weight: 500;
     padding: 25px;
     max-width: 65ch;
